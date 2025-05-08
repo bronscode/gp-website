@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Het Groeiportaal | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400,600&family=Roboto:ital,wght@0,200;0,300;0,400;0,500;1,300;1,500&display=swap" rel="stylesheet"> 
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <nav>
+        <div class="container">
+            <a class="logo" href="">
+                {% include 'img/groeiportaal_logo_nl.svg' %}
+            </a>
+            <ul>
+                <li class="active"><a href="">home</a></li>
+                <li><a href="">features</a></li>
+                <li><a href="">cases</a></li>
+                <li><a href="" class="btn">Plan een demo</a></li>
+            </ul>
+            <div class="language-switch">
+                <div class="language-switch-btn">
+                    NL &blacktriangledown;
+                </div>
+                <div class="language-switch-menu">
+                    EN &nbsp;&nbsp;
+                </div>
+            </div>
+            <div class="mobile-nav-btn">
+                {% include 'img/icons-list.svg' %}
+            </div>
+        </div>
+    </nav>

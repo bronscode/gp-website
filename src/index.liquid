@@ -1,0 +1,186 @@
+{% include 'header.liquid' %}
+
+<section id="landing">
+  <div class="container">
+    <div class="landing-content">
+      <h1>
+        Dé rapportagetool<br>
+        die <span class="text-aero">innovatie</span><br>
+        voorop zet
+      </h1>
+      <p>
+        Te veel tijd kwijt aan administratie, versiebeheer en compliance? Het Groeiportaal biedt een gestroomlijnde
+        omgeving voor financiële en inhoudelijke rapportages van consortiumprojecten.
+      </p>
+      <div class="landing-buttons">
+        <a href="#features" class="btn btn-outline">Lees meer</a>
+        <a href="" class="btn">Plan een demo</a>
+      </div>
+      <div class="landing-partners">
+        <span>Powered by</span>
+        <div>
+          <a
+            class="landing-partners-bc"
+            href="https://bronscode.nl"
+            target="_blank">
+            {% include 'img/bronscode_logo.svg' %}
+          </a>
+          <a
+            class="landing-partners-ngf"
+            href="https://nxtgenhightech.nl"
+            target="_blank">
+            {% include 'img/nxtgen_logo.svg' %}
+          </a>
+          <a
+            class="landing-partners-ngf"
+            href="https://toekomstbestendigeleefomgeving.nl"
+            target="_blank">
+            {% include 'img/tbl_logo.svg' %}
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="landing-images">
+      <img class="landing-images-front" src="img/nxtgen_screenshot_1.png">
+      <img class="landing-images-back" src="img/nxtgen_screenshot_2.png">
+    </div>
+  </div>
+</section>
+
+<section id="features">
+  <h2>Key features</h2>
+  <div class="container">
+    <div class="feature">
+      {% include "img/icons-flow.svg" %}
+      <h3>Rapportageflow</h3>
+      <p>
+        Begrotingen en realisaties, beoordelen en terugkoppelen van feedback, allemaal in dezelfde gebruiksvriendelijke
+        interface
+      </p>
+    </div>
+    <div class="feature">
+      {% include "img/icons-xhair.svg" %}
+      <h3>Inhoudelijke KPIs</h3>
+      <p>
+        Vraag gemakkelijk ook inhoudelijke informatie uit en krijg zo een overzicht van de KPIs van alle lopende
+        projecten.
+      </p>
+    </div>
+    <div class="feature">
+      {% include "img/icons-chart.svg" %}
+      <h3>Voortgangsoverzicht</h3>
+      <p>
+        Krijg inzicht in welke projecten voor- of achterlopen, zodat het duidelijk wordt waar extra communicatie nodig
+        is.
+      </p>
+    </div>
+    <div class="feature">
+      {% include "img/icons-align.svg" %}
+      <h3>Dashboards</h3>
+      <p>Dashboards met statistieken van alle projecten geven overzicht over het hele consortium.</p>
+    </div>
+  </div>
+</section>
+
+<section id="gains">
+  <div class="container">
+    <h2>De voordelen van het Groeiportaal</h2>
+    <div class="gains-grid">
+      <div class="gains-content">
+        <p>
+          <b class="text-aero">Voor deelnemers</b><br>
+          Innovators willen zich volledig kunnen focussen op hun werk. Echter gaat veel tijd verloren aan het bijhouden
+          van administratie en het invullen van jaarlijkse rapportages.
+        </p>
+        <p>
+          Het Groeiportaal biedt ondersteuning bij het invullen van deze rapportages, waardoor er minder tijd nodig is
+          voor administratie en er meer tijd overblijft voor wat echt belangrijk is: <b>innoveren</b>.
+        </p>
+        <p>
+          <b class="text-aero">Voor penvoerders</b><br>
+          De penvoerders streven ernaar het maximale uit hun innovatieproject te halen. Een goed overzicht van de
+          voortgang en de rapportages van deelnemers is daarbij essentieel.
+        </p>
+        <p>
+          Het Groeiportaal biedt een helder <b>overzicht</b> van de voortgang in de financiële rapportages van
+          deelnemers, zodat projectleiders altijd op de hoogte zijn van de stand van zaken.
+        </p>
+        <p>
+          <b class="text-aero">Voor het management</b><br>
+          De subsidieverstrekker investeert in projecten die goed zijn voor het milieu, de economie en de maatschappij
+          als geheel. Het is cruciaal om aan te tonen dat deze investeringen de gewenste <b>impact</b> hebben.
+        </p>
+        <p>
+          Het Groeiportaal stelt het management in staat om de uitkomsten van projecten aan belanghebbenden te
+          presenteren, waardoor de impact van deze projecten helder en inzichtelijk wordt.
+        </p>
+      </div>
+      <div class="gains-icons">
+        <div class="gains-icon">
+          {% include "img/icons-clock.svg" %}
+          <h4>Tijdbesparing</h4>
+        </div>
+        <div class="gains-icon">
+          {% include "img/icons-error.svg" %}
+          <h4>Minder foutgevoelig</h4>
+        </div>
+        <div class="gains-icon">
+          {% include "img/icons-server.svg" %}
+          <h4>Single source of truth</h4>
+        </div>
+        <div class="gains-icon">
+          {% include "img/icons-roles.svg" %}
+          <h4>Rollenbeheer</h4>
+        </div>
+        <div class="gains-icon">
+          {% include "img/icons-gauge.svg" %}
+          <h4>Performance meten</h4>
+        </div>
+        <div class="gains-icon">
+          {% include "img/icons-atom.svg" %}
+          <h4>Impact aantonen</h4>
+        </div>
+      </div>
+    </div>
+    <a class="btn btn-arrow" href="">Bekijk de cases</a>
+  </div>
+</section>
+
+<section id="stats">
+  <h2>We ondersteunen al:</h2>
+  <div class="container">
+    <div class="stat">
+      <span class="stat-amount">
+        <span class="stat-number">84</span>
+      </span>
+      <span class="stat-caption">projecten</span>
+    </div>
+    <div class="stat">
+      <span class="stat-amount">
+        <span class="stat-number">500</span>+</span>
+      <span class="stat-caption">projectpartners</span>
+    </div>
+    <div class="stat">
+      <span class="stat-amount">€<span class="stat-number">1.2</span>Mld.</span>
+      <span class="stat-caption">aan rapportages</span>
+    </div>
+  </div>
+</section>
+
+<section id="growth">
+  <div class="container">
+    <h1>Wij <span class="text-aero">groeien</span> met je mee</h1>
+    <p>
+      Het Groeiportaal is een flexibel product en is in staat om veel verschillende governance structuren te
+      ondersteunen. Wij denken mee hoe we de overgang kunnen bevorderen, de governance terug kunnen geven aan het
+      management en welke structuur hiervoor het beste past. (of iets dergelijks, waaruit blijkt dat we dus ook
+      (volledig inbegrepen) consultancy bieden op de inrichting en visie van de governance)
+    </p>
+    <p>Hiertoe kan het product ook nog uitgebreid worden en dus meegroeien in de juiste richting!</p>
+    <a href="" class="btn">Plan een gratis gesprek</a>
+  </div>
+</section>
+
+<link rel="stylesheet" href="css/index.css" />
+
+{% include 'footer.liquid' %}
