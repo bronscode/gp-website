@@ -70,8 +70,7 @@
       {% include "img/icons-chart.svg" %}
       <h3>Voortgangsoverzicht</h3>
       <p>
-        Krijg inzicht in welke projecten voor- of achterlopen, zodat het duidelijk wordt waar extra communicatie nodig
-        is.
+        Krijg inzicht in welke projecten voor- of achterlopen, zodat het duidelijk wordt waar extra communicatie nodig is.
       </p>
     </div>
     <div class="feature">
@@ -142,7 +141,7 @@
         </div>
       </div>
     </div>
-    <a class="btn btn-arrow" href="">Bekijk de cases</a>
+    <a class="btn btn-arrow" href="cases">Bekijk de cases</a>
   </div>
 </section>
 
@@ -150,18 +149,21 @@
   <h2>We ondersteunen al:</h2>
   <div class="container">
     <div class="stat">
-      <span class="stat-amount">
+      <div class="stat-amount">
         <span class="stat-number">84</span>
-      </span>
+      </div>
       <span class="stat-caption">projecten</span>
     </div>
     <div class="stat">
-      <span class="stat-amount">
-        <span class="stat-number">500</span>+</span>
+      <div class="stat-amount">
+        <span class="stat-number">500</span><span style="display:inline-block;transform:translateY(-.075em)">+</span>
+      </div>
       <span class="stat-caption">projectpartners</span>
     </div>
     <div class="stat">
-      <span class="stat-amount">€<span class="stat-number">1.2</span>Mld.</span>
+      <div class="stat-amount">
+        <span class="euro">€</span><span class="stat-number">1.2</span>Mld.
+      </div>
       <span class="stat-caption">aan rapportages</span>
     </div>
   </div>
@@ -181,6 +183,6 @@
   </div>
 </section>
 
-<link rel="stylesheet" href="css/index.css" />
+<link rel="stylesheet" href="/css/index.css" />
 
 {% include 'footer.liquid' %}

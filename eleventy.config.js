@@ -20,7 +20,7 @@ export default function (eleventyConfig) {
 
   eleventyConfig.setLiquidOptions({
     dynamicPartials: true,
-    strictFilters: false, // renamed from `strict_filters` in Eleventy 1.0
+    strictFilters: false,
   });
 
   eleventyConfig.addTransform("htmlmin", function (content, outputPath) {

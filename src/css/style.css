@@ -54,6 +54,10 @@ h3 {
     margin-left: auto
 }
 
+.euro {
+    font-size: 0.8em;
+}
+
 @media (min-width: 576px) {
     .container {
         max-width: 540px
@@ -209,10 +213,10 @@ nav .mobile-nav-btn {
        color: var(--aero);
     }
 
-    nav li a.btn {
+    nav li .btn {
         margin: 1rem 2rem;
     }
-    nav li a.btn:hover {
+    nav li .btn:hover {
         background-color: #fff;
         color: #000;
     }
@@ -227,7 +231,7 @@ nav .mobile-nav-btn {
     }
 }
 
-a.btn {
+.btn {
     padding: 10px 20px;
     background-color: var(--aero-dark);
     border: 1px solid var(--aero);
@@ -235,39 +239,40 @@ a.btn {
     border-radius: 10px;
     transition: background-color 150ms ease;
     text-decoration: none;
+    cursor: pointer
 }
 
-a.btn:hover {
+.btn:hover {
     background-color: var(--aero);
     border: 1px solid var(--aero-dark);
     color: #fff;
 }
 
-a.btn:active {
+.btn:active {
     background-color: var(--aero-dark);
     border: 1px solid var(--columbia-blue);
     color: #fff;
 }
 
-a.btn.btn-outline {
+.btn.btn-outline {
     background-color: transparent;
     border: 1px solid #000;
     color: #000;
     transition: color 150ms ease, border-color 150ms ease;
 }
 
-a.btn.btn-outline:hover {
+.btn.btn-outline:hover {
     color: var(--aero);
     border-color: var(--aero);
 }
 
-a.btn.btn-outline:active {
+.btn.btn-outline:active {
     color: var(--aero);
     border-color: var(--aero-dark);
     background-color: #bad7f2ff;
 }
 
-a.btn.btn-arrow::after {
+.btn.btn-arrow::after {
     content: "→";
     margin-left: 0.5em;
     font-size: 1.2em;
