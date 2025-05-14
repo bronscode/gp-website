@@ -334,7 +334,7 @@
 }
 
 #growth {
-    background: url('../img/ferns.jpg') var(--rich-black);
+    background: url('/img/ferns.jpg') var(--rich-black);
     background-blend-mode: luminosity;
     background-size: cover;
     color: #fff;

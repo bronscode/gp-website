@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="{{ locale }}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,20 +19,32 @@
             <ul>
                 {% for item in nav %}
                     <li {% if page.url == item.url %}class="active"{% endif %}>
-                        <a href="{{ item.url }}" {% if item.id == "contact" %}class="btn"{% endif %}>
-                            {{ i18n["nl"]["nav"][item.id] }}
+                        <a href="{{ item.url | locale_url }}" {% if item.id == "contact" %}class="btn"{% endif %}>
+                            {{ translations["nav"][item.id][locale] }}
                         </a>
                     </li>
                 {% endfor %}
             </ul>
-            {% comment %} <div class="language-switch">
+            {% if locale == "nl" %}
+            <div class="language-switch">
                 <div class="language-switch-btn">
                     NL &blacktriangledown;
                 </div>
-                <div class="language-switch-menu">
-                    EN &nbsp;&nbsp;
+                <a href="/en/{{ pageName }}" class="language-switch-menu" onclick="localStorage.setItem('preferredLang', 'en')">
+                   EN &nbsp;&nbsp;
+                </a>
+            </div>
+            {% endif %}
+            {% if locale == "en" %}
+            <div class="language-switch">
+                <div class="language-switch-btn">
+                    EN &blacktriangledown;
                 </div>
-            </div> {% endcomment %}
+                <a href="/nl/{{ pageName }}" class="language-switch-menu" onclick="localStorage.setItem('preferredLang', 'nl')">
+                   NL &nbsp;&nbsp;
+                </a>
+            </div>
+            {% endif %}
             <div class="mobile-nav-btn">
                 {% include 'img/icons-list.svg' %}
             </div>

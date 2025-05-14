@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Redirecting...</title>
+  <script>
+    (function () {
+      const supportedLangs = ['nl', 'en'];
+      const defaultLang = 'en';
+
+      // If user has manually selected language before, honor that
+      const storedLang = localStorage.getItem('preferredLang');
+      if (storedLang && supportedLangs.includes(storedLang)) {
+        window.location.replace('/' + storedLang + '/');
+        return;
+      }
+
+      // Otherwise detect from browser
+      const lang = (navigator.language || navigator.userLanguage || defaultLang).split('-')[0];
+      const redirectLang = supportedLangs.includes(lang) ? lang : defaultLang;
+
+      // Store preference to avoid repeat redirects
+      localStorage.setItem('preferredLang', redirectLang);
+
+      window.location.replace('/' + redirectLang + '/');
+    })();
+  </script>
+</head>
+<body>
+  <p>Redirecting to your language...</p>
+</body>
+</html>

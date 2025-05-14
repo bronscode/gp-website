@@ -139,6 +139,8 @@ nav .language-switch-menu {
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 8px;
+    color: #000;
+    text-decoration: none;
 }
 
 nav .language-switch.open .language-switch-menu {
