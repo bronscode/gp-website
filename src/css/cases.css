@@ -66,8 +66,17 @@
     margin-bottom: -10px;
 }
 
+.case-description ul {
+    padding-left: 2rem;
+}
+
+.case-description ul li {
+    padding-left: 0.5rem;
+    line-height: 1.5;
+}
+
 .case-description p {
-    line-height: 1.25;
+    line-height: 1.33;
 }
 
 .case-details h4 {
@@ -127,7 +136,7 @@
 .case-images img {
     border-radius: 5px;
     box-shadow: 0 0 20px 0px #0003;
-    transition: height 1s ease, opacity 1s ease;
+    transition: height 1s ease, opacity 1s ease, filter 1s ease;
     height: 400px;
 }
 
@@ -138,4 +147,5 @@
 .case-images img:not(.active) {
     height: 350px;
     opacity: 0.5;
+    filter: blur(0.75px);
 }

@@ -1,0 +1,18 @@
+{
+  "en": {
+    "nav": {
+      "home": "home",
+      "features": "features",
+      "cases": "cases",
+      "contact": "Plan a demo"
+    }
+  },
+  "nl": {
+    "nav": {
+      "home": "home",
+      "features": "features",
+      "cases": "cases",
+      "contact": "Plan een demo"
+    }
+  }
+}

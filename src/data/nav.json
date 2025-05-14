@@ -1,0 +1,18 @@
+[
+  {
+    "id": "home",
+    "url": "/"
+  },
+  {
+    "id": "features",
+    "url": "/#features"
+  },
+  {
+    "id": "cases",
+    "url": "/cases/"
+  },
+  {
+    "id": "contact",
+    "url": "/contact/"
+  }
+]

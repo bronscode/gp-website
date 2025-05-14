@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,17 +11,19 @@
     <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
 </head>
 <body>
-
     <nav>
         <div class="container">
             <a class="logo" href="">
                 {% include 'img/groeiportaal_logo_nl.svg' %}
             </a>
             <ul>
-                <li class="active"><a href="">home</a></li>
-                <li><a href="">features</a></li>
-                <li><a href="">cases</a></li>
-                <li><a href="" class="btn">Plan een demo</a></li>
+                {% for item in nav %}
+                    <li {% if page.url == item.url %}class="active"{% endif %}>
+                        <a href="{{ item.url }}" {% if item.id == "contact" %}class="btn"{% endif %}>
+                            {{ i18n["nl"]["nav"][item.id] }}
+                        </a>
+                    </li>
+                {% endfor %}
             </ul>
             <div class="language-switch">
                 <div class="language-switch-btn">

@@ -5,11 +5,14 @@ export default function (eleventyConfig) {
   eleventyConfig.setInputDirectory("src");
   eleventyConfig.setOutputDirectory("build");
   eleventyConfig.setIncludesDirectory("partials");
+  eleventyConfig.setDataDirectory("data");
 
   eleventyConfig.addPassthroughCopy("src/img");
   eleventyConfig.addPassthroughCopy("src/js");
 
   eleventyConfig.setTemplateFormats(["liquid", "css", "html"]);
+
+  eleventyConfig.addFilter("lowercase", (x) => x.toLowerCase());
 
   eleventyConfig.addExtension("css", {
     outputFileExtension: "css",

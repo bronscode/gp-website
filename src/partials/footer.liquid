@@ -1,29 +1,45 @@
 <footer>
     <div class="container">
         <div class="footer-grid">
-            <div>
+            <div class="logo">
                 {% include "img/groeiportaal_logo_nl_dark.svg" %}
             </div>
-            <ul>
-                <li class="active"><a href="">home</a></li>
-                <li><a href="">features</a></li>
-                <li><a href="">cases</a></li>
-                <li><a href="">plan een demo</a></li>
-            </ul>
-            <div>
+            <div class="footer-nav">
+                <p>
+                    <b>Pagina's</b>
+                </p>
+                <ul>
+                    {% for item in nav %}
+                        <li>
+                            <a href="{{ item.url }}">
+                                {{ i18n["nl"]["nav"][item.id] | lowercase }}
+                            </a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% comment %} <div>
                 <p>
                     <b>Volg het Groeiportaal</b>
                 </p>
                 <p>
                     &lt;social media links&gt;
                 </p>
-            </div>
-            <div>
+            </div> {% endcomment %}
+            <div class="footer-socials">
                 <p>
                     <b>Volg Bronscode</b>
                 </p>
                 <p>
-                    &lt;social media links&gt;
+                    <a href="https://bronscode.nl" target="_blank">
+                        {% include 'img/icons-globe-thin.svg' %}
+                    </a>
+                    <a href="https://www.linkedin.com/company/bronscode" target="_blank">
+                        {% include 'img/icons-linkedin-fill.svg' %}
+                    </a>
+                    <a href="https://www.github.com/bronscode" target="_blank">
+                        {% include 'img/icons-github-fill.svg' %}
+                    </a>
                 </p>
             </div>
         </div>
