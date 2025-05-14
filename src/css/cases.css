@@ -52,6 +52,10 @@
     height: 8rem;
 }
 
+.case-buttons .btn {
+    width: 12rem;
+}
+
 .case-study h2 {
     margin-top: 0;
     margin-bottom: 20px;
@@ -118,6 +122,11 @@
     border-color: #999;
 }
 
+.btn:not(.active):hover {
+    background-color: #eee;
+    border-color: #999;
+}
+
 .btn:not(.active):active {
     background-color: #ccc;
     border-color: #888;
@@ -138,6 +147,7 @@
     box-shadow: 0 0 20px 0px #0003;
     transition: height 1s ease, opacity 1s ease, filter 1s ease;
     height: 400px;
+    cursor: pointer;
 }
 
 .case-images img.active {
