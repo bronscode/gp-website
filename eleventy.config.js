@@ -12,8 +12,6 @@ export default function (eleventyConfig) {
 
   eleventyConfig.setTemplateFormats(["liquid", "css", "html"]);
 
-  eleventyConfig.addFilter("lowercase", (x) => x.toLowerCase());
-
   eleventyConfig.addExtension("css", {
     outputFileExtension: "css",
     compile: async function (inputContent) {
