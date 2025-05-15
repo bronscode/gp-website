@@ -28,7 +28,7 @@ const onResize = () => {
   });
 };
 
-document.addEventListener("readystatechange", () => {
+document.addEventListener("DOMContentLoaded", () => {
   document
     .querySelectorAll(".case-screens .btn, .case-screens img")
     .forEach((el) => {
