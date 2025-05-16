@@ -108,6 +108,10 @@
     .case-study .hidden-xs {
         display: block;
     }
+
+    .case-screens {
+        display: none;
+    }
 }
 
 .case-screens {

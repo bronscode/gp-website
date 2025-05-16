@@ -14,7 +14,7 @@ function animateStat(stat) {
   }
 }
 
-document.addEventListener("DOMContentLoaded", () => {
+window.addEventListener("load", () => {
   // Smooth anchor scroll
   document.querySelectorAll('a[href*="#"]').forEach((a) => {
     a.addEventListener("click", (e) => {

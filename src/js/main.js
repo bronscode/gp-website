@@ -1,6 +1,6 @@
-document.addEventListener("readystatechange", () => {
+window.addEventListener("load", () => {
   // Mobile nav toggle
-  document.querySelector(".mobile-nav-btn").addEventListener("click", () => {
+  document.querySelector(".mobile-nav-btn").addEventListener("click", (e) => {
     const ul = document.querySelector("nav ul");
     if (ul.classList.contains("open")) {
       ul.classList.remove("open");

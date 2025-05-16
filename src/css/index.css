@@ -18,6 +18,7 @@
 #landing {
     opacity: 0;
     transition: opacity 600ms ease;
+    overflow: hidden;
 }
 
 #landing.in {
