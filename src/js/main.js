@@ -48,7 +48,6 @@ document.addEventListener("readystatechange", () => {
   );
 
   const fades = document.querySelectorAll(".fade-in");
-  console.log(fades);
   fades.forEach((el) => {
     fadeInObserver.observe(el);
   });

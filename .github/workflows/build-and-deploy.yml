@@ -6,7 +6,7 @@ on:
       #####################################
       # Add branches to deploy from here. #
       #####################################
-      - develop
+      - production
 
 permissions:
   contents: read
