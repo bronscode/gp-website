@@ -348,7 +348,7 @@
 
 #stats.in .stat-plus {
     opacity: 1;
-    transform: translateY(-0.075em);
+    transform: translateY(-0.05em);
 } #stats.in .euro {
     opacity: 1;
     transform: translateY(0);
