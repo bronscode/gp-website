@@ -1,7 +1,7 @@
 function calcWidth(img) {
   const rect = img.getBoundingClientRect();
 
-  const h = img.classList.contains("active") ? 400 : 350;
+  const h = img.classList.contains("active") ? 450 : 400;
 
   return (rect.width / rect.height) * h;
 }

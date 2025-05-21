@@ -117,7 +117,7 @@
 .case-screens {
     text-align: center;
     padding-top: 2em;
-    padding-bottom: calc(400px + 6em);
+    padding-bottom: calc(450px + 6em);
 }
 
 .case-screens .btn:not(.active) {
@@ -142,7 +142,7 @@
     gap: 20px;
     align-items: center;
     position: absolute;
-    height: 400px;
+    height: 450px;
     transition: transform 1s ease;
 }
 
@@ -150,16 +150,16 @@
     border-radius: 5px;
     box-shadow: 0 0 20px 0px #0003;
     transition: height 1s ease, opacity 1s ease, filter 1s ease;
-    height: 400px;
+    height: 450px;
     cursor: pointer;
 }
 
 .case-images img.active {
-    height: 400px;
+    height: 450px;
 }
 
 .case-images img:not(.active) {
-    height: 350px;
+    height: 400px;
     opacity: 0.5;
     filter: blur(0.75px);
 }
