@@ -1,0 +1,4 @@
+User-Agent: *,
+Allow: /
+Sitemap: https://groeiportaal.nl/sitemap.xml
+Sitemap: https://www.groeiportaal.nl/sitemap.xml

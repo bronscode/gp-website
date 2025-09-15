@@ -21,6 +21,7 @@ export default function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy("src/img");
   eleventyConfig.addPassthroughCopy("src/js");
+  eleventyConfig.addPassthroughCopy("src/*.txt");
 
   eleventyConfig.setTemplateFormats(["liquid", "css", "html"]);
 
@@ -43,9 +44,17 @@ export default function (eleventyConfig) {
 
   eleventyConfig.addExtension("css", {
     outputFileExtension: "css",
+    getData: () => ({
+      eleventyExcludeFromCollections: true,
+    }),
     compile: async function (inputContent) {
       return async () => new CleanCSS({}).minify(inputContent).styles;
     },
+  });
+
+  eleventyConfig.addFilter("date", function () {
+    const d = new Date();
+    return `${d.getFullYear()}-${d.getMonth() + 1}-${d.getDate()}`;
   });
 
   eleventyConfig.setLiquidOptions({
