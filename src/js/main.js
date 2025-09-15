@@ -14,20 +14,20 @@ window.addEventListener("load", () => {
   });
 
   // Language switch toggle
-  // document
-  //   .querySelector(".language-switch-btn")
-  //   .addEventListener("click", () => {
-  //     const menu = document.querySelector("nav .language-switch");
-  //     if (menu.classList.contains("open")) {
-  //       menu.classList.remove("open");
-  //       menu.classList.remove("opened");
-  //     } else {
-  //       menu.classList.add("open");
-  //       setTimeout(() => {
-  //         menu.classList.add("opened");
-  //       }, 100);
-  //     }
-  //   });
+  document
+    .querySelector(".language-switch-btn")
+    .addEventListener("click", () => {
+      const menu = document.querySelector("nav .language-switch");
+      if (menu.classList.contains("open")) {
+        menu.classList.remove("open");
+        menu.classList.remove("opened");
+      } else {
+        menu.classList.add("open");
+        setTimeout(() => {
+          menu.classList.add("opened");
+        }, 100);
+      }
+    });
 
   const fadeInObserver = new IntersectionObserver(
     function (entries, fadeInObserver) {

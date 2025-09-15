@@ -2,7 +2,7 @@
     <div class="container">
         <div class="footer-grid">
             <div class="logo">
-                {% include "img/groeiportaal_logo_nl_dark.svg" %}
+                {% include "img/groeiportaal_logo_{{ locale }}_dark.svg" %}
             </div>
             <div class="footer-nav">
                 <p>
@@ -11,8 +11,8 @@
                 <ul>
                     {% for item in nav %}
                         <li>
-                            <a href="{{ item.url }}">
-                                {{ i18n["nl"]["nav"][item.id] }}
+                            <a href="{{ item.url | locale_url }}">
+                                {{ translations["nav"][item.id][locale] }}
                             </a>
                         </li>
                     {% endfor %}

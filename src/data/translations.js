@@ -6,7 +6,7 @@ const i18n = {
       home: "home",
       features: "features",
       cases: "cases",
-      contact: "Plan a demo",
+      contact: "Book a demo",
     },
     test: {
       hi: "Hello",

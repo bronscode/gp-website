@@ -35,7 +35,7 @@ export default function (eleventyConfig) {
   languages.forEach((locale) =>
     pages.forEach((page) => {
       eleventyConfig.addTemplate(`${locale}/${page}.liquid`, `{{ content }}`, {
-        layout: `${page}.liquid`,
+        layout: `${locale}/${page}.liquid`,
         locale,
         pageName: page === "index" ? "" : page,
       });
