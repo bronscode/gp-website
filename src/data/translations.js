@@ -11,6 +11,10 @@ const i18n = {
     test: {
       hi: "Hello",
     },
+    footer: {
+      pages: "Pages",
+      follow: "Follow Bronscode",
+    },
   },
   nl: {
     nav: {
@@ -21,6 +25,10 @@ const i18n = {
     },
     test: {
       hi: "Hallo",
+    },
+    footer: {
+      pages: "Pagina's",
+      follow: "Volg Bronscode",
     },
   },
 };
